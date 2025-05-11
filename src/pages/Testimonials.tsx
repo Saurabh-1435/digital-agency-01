@@ -60,7 +60,7 @@ const testimonials = [
     company: 'Global Logistics',
     position: 'Operations Manager',
     image: 'https://randomuser.me/api/portraits/men/22.jpg',
-    quote: 'The custom logistics software SHILPKAR developed has revolutionized our supply chain management. Their team took the time to understand our complex needs and delivered a solution that's made a real impact.',
+    quote: "The custom logistics software SHILPKAR developed has revolutionized our supply chain management. Their team took the time to understand our complex needs and delivered a solution that's made a real impact.",
     rating: 5,
     project: 'Supply Chain Management System'
   }
