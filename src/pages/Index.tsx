@@ -16,7 +16,7 @@ const Index = () => {
       containers.forEach(container => {
         const elements = container.querySelectorAll('.parallax-element');
         
-        container.addEventListener('mousemove', (e) => {
+        container.addEventListener('mousemove', (e: MouseEvent) => {
           const rect = container.getBoundingClientRect();
           const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
           const y = ((e.clientY - rect.top) / rect.height - 0.5) * -2;
@@ -28,13 +28,13 @@ const Index = () => {
             const rotateY = x * 10;
             const rotateX = y * 10;
             
-            element.style.transform = `translateX(${translateX}px) translateY(${translateY}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+            (element as HTMLElement).style.transform = `translateX(${translateX}px) translateY(${translateY}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
           });
         });
         
         container.addEventListener('mouseleave', () => {
           elements.forEach(element => {
-            element.style.transform = 'translateX(0) translateY(0) rotateY(0) rotateX(0)';
+            (element as HTMLElement).style.transform = 'translateX(0) translateY(0) rotateY(0) rotateX(0)';
           });
         });
       });
