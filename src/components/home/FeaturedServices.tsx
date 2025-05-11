@@ -19,7 +19,7 @@ const services = [
   {
     icon: <PenTool size={32} />,
     title: 'Graphic Design',
-    description: 'Creative visual designs that communicate your brand's message effectively and leave lasting impressions.',
+    description: 'Creative visual designs that communicate your brand\'s message effectively and leave lasting impressions.',
     link: '/services#design'
   }
 ];
