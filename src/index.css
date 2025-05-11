@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,83 +7,35 @@
 
 @layer base {
   :root {
-    --background: 260 33% 98%;
-    --foreground: 250 30% 15%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 250 30% 15%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 250 30% 15%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 260 75% 75%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 40% 96%;
-    --secondary-foreground: 250 30% 15%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 260 10% 90%;
-    --muted-foreground: 250 10% 40%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 24 100% 53%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 260 20% 88%;
-    --input: 260 20% 88%;
-    --ring: 260 75% 75%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262.1 83.3% 57.8%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 250 30% 15%;
-    --foreground: 0 0% 95%;
-
-    --card: 250 30% 20%;
-    --card-foreground: 0 0% 95%;
-
-    --popover: 250 30% 20%;
-    --popover-foreground: 0 0% 95%;
-
-    --primary: 260 75% 75%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 250 25% 25%;
-    --secondary-foreground: 0 0% 95%;
-
-    --muted: 250 25% 25%;
-    --muted-foreground: 0 0% 70%;
-
-    --accent: 24 100% 53%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 95%;
-
-    --border: 250 25% 25%;
-    --input: 250 25% 25%;
-    --ring: 260 75% 75%;
-
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -91,127 +43,40 @@
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground font-sans;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold;
-  }
-
-  .parallax-container {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-
-  .parallax-element {
-    transform-style: preserve-3d;
-    transition: transform 0.1s ease-out;
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer components {
-  .revealed {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  .revealed.active {
-    animation: reveal 1s ease-out forwards;
-  }
-
   .btn {
-    @apply px-6 py-2.5 rounded-md font-medium transition-all duration-300;
+    @apply inline-block px-5 py-3 rounded-lg font-semibold transition-all cursor-pointer text-center;
   }
-
+  
   .btn-primary {
     @apply bg-brand-purple text-white hover:bg-brand-purple-dark;
   }
-
+  
   .btn-secondary {
-    @apply bg-white text-brand-purple border border-brand-purple hover:bg-brand-purple/10;
-  }
-
-  .btn-accent {
-    @apply bg-brand-orange text-white hover:brightness-110;
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
   }
   
-  .section {
-    @apply py-16 md:py-24;
-  }
-
   .nav-link {
-    @apply relative inline-block px-2 py-1 text-foreground transition-colors hover:text-brand-purple after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-brand-purple after:transition-all hover:after:w-full;
+    @apply relative font-medium text-gray-700 hover:text-brand-purple after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-purple after:transition-all hover:after:w-full;
   }
-
+  
   .nav-link.active {
     @apply text-brand-purple after:w-full;
   }
 }
 
-.card-hover {
-  @apply transition-transform duration-500 hover:translate-y-[-10px] hover:shadow-lg;
-}
-
-.gradient-bg {
-  @apply bg-gradient-to-br from-brand-purple/80 to-brand-purple-dark;
-}
-
-/* Scroll Animations */
-.scroll-animation {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease-out;
-}
-
-.scroll-animation.animated {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 3D styles */
-.scene {
-  perspective: 1000px;
-}
-
-.cube {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-100px);
-  transition: transform 1s;
-}
-
-.cube__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* Responsive grid */
-.content-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
-}
-
-/* Custom shapes */
-.shape-blob {
-  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-  animation: morph 10s linear infinite;
-}
-
-@keyframes morph {
-  0%, 100% {
-    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+@layer utilities {
+  .scroll-animation {
+    @apply opacity-0 translate-y-10 transition-all duration-700;
   }
-  25% {
-    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
-  }
-  50% {
-    border-radius: 52% 48% 47% 53% / 54% 48% 52% 46%;
-  }
-  75% {
-    border-radius: 45% 55% 65% 35% / 40% 50% 50% 60%;
+  
+  .scroll-animation.animated {
+    @apply opacity-100 translate-y-0;
   }
 }
