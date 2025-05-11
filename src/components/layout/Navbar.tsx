@@ -113,18 +113,14 @@ const Navbar = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link to="/" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Home
-                  </NavigationMenuLink>
+                <Link to="/" className={navigationMenuTriggerStyle()}>
+                  Home
                 </Link>
               </NavigationMenuItem>
               
               <NavigationMenuItem>
-                <Link to="/about" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    About Us
-                  </NavigationMenuLink>
+                <Link to="/about" className={navigationMenuTriggerStyle()}>
+                  About Us
                 </Link>
               </NavigationMenuItem>
 
@@ -171,26 +167,20 @@ const Navbar = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/pricing" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Pricing
-                  </NavigationMenuLink>
+                <Link to="/pricing" className={navigationMenuTriggerStyle()}>
+                  Pricing
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/careers" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Careers
-                  </NavigationMenuLink>
+                <Link to="/careers" className={navigationMenuTriggerStyle()}>
+                  Careers
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link to="/contact" legacyBehavior passHref>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-brand-purple text-white hover:bg-brand-purple/90 hover:text-white")}>
-                    Contact Us
-                  </NavigationMenuLink>
+                <Link to="/contact" className={cn(navigationMenuTriggerStyle(), "bg-brand-purple text-white hover:bg-brand-purple/90 hover:text-white")}>
+                  Contact Us
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
