@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+⚡ Digital Agency Website
+A sleek, fast, and responsive web experience built to represent modern digital agencies. Crafted with passion using the latest tools in the frontend world.
 
-## Project info
+🔗 Live Demo  https://digital-agency-1.netlify.app/
 
-**URL**: https://lovable.dev/projects/26813813-785c-43a9-bff4-2791bd937a86
 
-## How can I edit this code?
+🧠 Tech Stack
+Technology	Description
+⚛️ React	Frontend JavaScript library
+⚡ Vite	Lightning-fast build tool
+🎨 Tailwind CSS	Utility-first CSS framework
+🧩 shadcn/ui	Elegant and accessible UI components
+💬 TypeScript	Strongly typed superset of JavaScript
 
-There are several ways of editing your application.
+🚀 Getting Started
+To run the project locally, follow these steps:
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/26813813-785c-43a9-bff4-2791bd937a86) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+bash
+Copy
+Edit
+# Clone the repo
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Go to the project directory
+cd your-project-name
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
-```
+You’re now ready to build, edit, and launch!
 
-**Edit a file directly in GitHub**
+🛠️ Features
+🖥️ Responsive layout for all screen sizes
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🌙 Dark mode ready
 
-**Use GitHub Codespaces**
+⚡ Fast loading with Vite
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+💎 Pixel-perfect design system
 
-## What technologies are used for this project?
+✨ Clean, scalable codebase
 
-This project is built with:
+🌐 Deployment
+Deploy using:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+✅ Vercel
 
-## How can I deploy this project?
+✅ Netlify
 
-Simply open [Lovable](https://lovable.dev/projects/26813813-785c-43a9-bff4-2791bd937a86) and click on Share -> Publish.
+✅ GitHub Pages
 
-## Can I connect a custom domain to my Lovable project?
+You can connect a custom domain via your chosen platform's settings.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🙌 Author
+Made with ❤️ by [Saurabh Lakhan]
+Feel free to connect: saurabhlakhan4545@gmail.com
